@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07111f" />
+  <title>أفق — مساعدك المعرفي المحلي</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">✦</span><div><strong>أُفُق</strong><small>مساعد معرفي محلي</small></div></div>
+      <button class="new-chat" id="newChat">＋ محادثة جديدة</button>
+      <div class="side-section"><span>الوضع الحالي</span><div class="mode-card"><span class="status-dot"></span><div><b>المعرفة المحلية</b><small>بدون API خارجي</small></div></div></div>
+      <div class="side-section"><span>مواضيع جاهزة</span><div class="chips"><button data-question="من هو ليونيل ميسي؟">كرة القدم</button><button data-question="ما هو الذكاء الاصطناعي؟">تقنية</button><button data-question="كيف أبدأ تعلم البرمجة؟">تعلم</button><button data-question="ما عاصمة المملكة العربية السعودية؟">جغرافيا</button></div></div>
+      <div class="sidebar-footer">نسخة أولية قابلة للتوسعة<br><span>بياناتك تبقى في متصفحك</span></div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar"><div><span class="eyebrow">مركز المعرفة المفتوح</span><h1>كيف أساعدك اليوم؟</h1></div><div class="top-actions"><span class="local-badge">● محلي 100%</span><button class="icon-btn" id="clearChat" title="مسح المحادثة">⌫</button></div></header>
+      <section class="chat-area" id="chatArea">
+        <div class="welcome" id="welcome">
+          <div class="welcome-orb">✦</div><h2>أهلاً بك في أُفُق</h2><p>مساعد عربي يعمل من داخل جهازك. اسأل عن المعرفة المضمّنة، أو وسّع قاعدة البيانات بنفسك.</p>
+          <div class="suggestions"><button data-question="اشرح لي كيف يعمل الإنترنت بطريقة بسيطة">كيف يعمل الإنترنت؟</button><button data-question="ما أفضل طريقة لتنظيم الوقت؟">تنظيم الوقت</button><button data-question="أعطني معلومة عن كوكب المريخ">عن المريخ</button></div>
+        </div>
+      </section>
+      <div class="composer-wrap"><div class="composer"><textarea id="prompt" rows="1" placeholder="اكتب سؤالك هنا... (اضغط Enter للإرسال)"></textarea><button class="voice-btn" id="voiceBtn" title="تحدث">♩</button><button class="send-btn" id="sendBtn" title="إرسال">➤</button></div><div class="composer-meta"><span>أُفُق لا يتصل بأي خدمة خارجية</span><span id="voiceStatus"></span></div></div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
